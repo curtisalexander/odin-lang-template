@@ -1,0 +1,73 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"settings":
+	{
+		"lsp_format_on_save": true,
+		"LSP":
+		{
+			"odin":
+			{
+				"auto_complete": true,
+				"enabled": true,
+			},
+		},
+	},
+	"build_systems":
+	[
+		{
+			"selector": "source.odin",
+			"name": "odin-lang-template",
+			"cmd": "odin check .",
+			"file_regex": "^(.+)\\(([0-9]+):([0-9]+)\\) (.+)$",
+			"variants":
+			[
+				// build
+				{
+					"name": "build odin package",
+					"shell_cmd": "odin build ."
+				},
+				// check
+				{
+					"name": "check odin package",
+					"shell_cmd": "odin check ."
+				},
+				// run
+				{
+					"name": "run odin package",
+					"shell_cmd": "odin run ."
+				},
+				// test
+				{
+					"name": "test odin package",
+					"shell_cmd": "odin test ."
+				},
+				// build - debug
+				{
+					"name": "build odin package - debug",
+					"shell_cmd": "odin build . -debug"
+				},
+				// check - debug
+				{
+					"name": "check odin package - debug",
+					"shell_cmd": "odin check . -debug"
+				},
+				// run - debug
+				{
+					"name": "run odin package - debug",
+					"shell_cmd": "odin run . -debug"
+				},
+				// test - debug
+				{
+					"name": "test odin package - debug",
+					"shell_cmd": "odin test . - debug"
+
+				},
+			]
+		}
+	]
+}
