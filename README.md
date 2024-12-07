@@ -12,7 +12,7 @@ Editor configuration for [Sublime Text](https://www.sublimetext.com/)
 ### `Build`
 Contents of `%APPDATA%\Sublime Text\Packages\User\Odin.sublime-build`
 
-```json
+```js
 {
 	"selector": "source.odin",
 	"file_regex": "^(.+)\\(([0-9]+):([0-9]+)\\) (.+)$",
@@ -34,7 +34,7 @@ Contents of `%APPDATA%\Sublime Text\Packages\User\Odin.sublime-build`
 ### `LSP`
 Contents of `%APPDATA%\Sublime Text\Packages\User\LSP.sublime-settings`
 
-```json
+```js
 // Settings in here override those in "LSP/LSP.sublime-settings"
 {
 	"clients": {
